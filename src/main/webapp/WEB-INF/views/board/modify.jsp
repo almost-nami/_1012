@@ -319,7 +319,7 @@
                     contentType: false,
                     data: formData,
                     type: 'POST',
-                    beforSend: function (xhr){
+                    beforeSend: function (xhr){
                         xhr.setRequestHeader(csrfHeaderName, csrfTokenValue);
                     },
                     dataType: 'json',

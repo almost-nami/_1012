@@ -242,7 +242,7 @@
             $.ajax({
                 url: '/deleteFile',
                 data: {fileName: targetFile, type: type},
-                beforSend: function (xhr){
+                beforeSend: function (xhr){
                   xhr.setRequestHeader(csrfHeaderName, csrfTokenValue);
                 },
                 dataType: 'text',
@@ -274,7 +274,7 @@
                 url: '/uploadAjaxAction',
                 processData: false,
                 contentType: false,
-                beforSend : function (xhr) {
+                beforeSend : function (xhr) {
                     xhr.setRequestHeader(csrfHeaderName, csrfTokenValue);
                 },
                 data: formData,
